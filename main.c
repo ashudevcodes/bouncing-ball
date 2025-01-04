@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 #define WIDTH 80
-#define HEIGHT 40
+#define HEIGHT (int)(WIDTH / 2)
 
 struct Circle {
   double x, y, r, v_x, v_y;
@@ -63,8 +63,7 @@ int main() {
 
   clear_screen();
 
-  struct Circle circle = {10, 10, 8, 2, 2};
-  struct Circle square = {10, 10, 3, 2, 2};
+  struct Circle circle = {10, 10, 8, 1, 1};
 
   while (1) {
     move_cursor_beginning();
