@@ -35,7 +35,7 @@ void screen_saver(struct Circle circle){
 				printf("#");
 			}
 			else{
-				printf("-");
+				printf(".");
 			}
 
 		}
